@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="controle">
+            <div class="container">
+                <div class="esquerda">
+                    <img src="/assets/botoesx.png" alt="">
+                </div>
+                <div class="tela">
+                   <h1><span class="wave">ELoS</span></h1>
+                </div>
+                <div class="direita">
+                    <img src="/assets/botoes2x.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="niveis">
+            <div class="titulo">
+                <h1>SELEÇÃO DE NÍVEIS</h1>
+            </div>
+            <div class="selecao">
+                <ul>
+                    <li class="nivel">
+                        <div class="botao">
+                            <button onclick="window.location.href='#'">1</button>
+                        </div>
+                        <h2>Conteúdo Inicial</h2>
+                    </li>
+                    <li class="nivel">
+                        <div class="botao2">
+                            <button onclick="window.location.href='#'">2</button>
+                        </div>
+                        <h2>Condicionais P.1</h2>
+                    </li>
+                    <li class="nivel">
+                        <div class="botao">
+                            <button onclick="window.location.href='#'">3</button>
+                        </div>
+                        <h2>Condicionais P.2</h2>
+                    </li>
+                    <li class="nivel">
+                        <div class="botao2">
+                            <button onclick="window.location.href='#'">4</button>
+                        </div>
+                        <h2>Em breve</h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="robo">
+            <img src="/assets/robo2.gif" alt="">
+        </div>
+        <div class="ajuda">
+            <div class="titulo">
+                <h1>SAIBA MAIS</h1>
+            </div>
+            <div class="video">
+                <button id="abrir-modal">
+                    
+                </button>
+
+                <div id="modal" class="modal">
+                <div class="modal-conteudo">
+                    <span class="fechar">&times;</span>
+                    <video src="/assets/video.mp4" class="modal-video" controls autoplay></video>
+                </div>
+                </div>
+
+                <div id="fundo-modal" class="fundo-modal"></div>
+            </div>
+        </div>  
+         
+    </main>
+    
+    <script src="/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
