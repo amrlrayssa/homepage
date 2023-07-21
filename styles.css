@@ -130,9 +130,6 @@ main {
 
 .selecao {
     margin-top: 25px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     display: flex;
     flex-direction: column;
     background-color: rgb(218, 217, 217);
@@ -155,7 +152,43 @@ li {
     margin-bottom: 10px;
 }
 
+.container_nivel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.botao_video {
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_video button {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(218, 217, 217);
+    font-family: 'VT323', monospace;
+    font-size: xx-large;
+    color: #0298c6;
+    border: none;
+    cursor: pointer;
+}
+
+.video h2 {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
 .nivel {
+    flex: 1;
+    margin-left: 10px;
     text-align: center;
     align-items: center;
     display: flex;
@@ -165,6 +198,15 @@ li {
 .nivel h2 {
     margin-left: 20px;
     font-size: 18px;
+}
+
+.line {
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: black;
+    opacity: 0.2;
+    height: 1px;
+    width: 98%;
 }
 
 .botao {
@@ -177,7 +219,7 @@ li {
     background-color: #2a245e;
     font-family: 'VT323', monospace;
     font-size: xx-large;
-    color: #5648d0;
+    color: #8b83d4;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -235,6 +277,26 @@ li {
 }
 
 @media only screen and (max-width: 1050px) {
+    * {
+        align-items: center;
+    }
+    .header {
+        width: 100%;
+        padding-left: 0;
+    }
+    .controle {
+        width: 70%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .robo {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
     * {
         align-items: center;
     }
