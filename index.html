@@ -43,7 +43,7 @@
                         </li>
                         <li class="video">
                             <div class="botao_video">
-                                <button onclick="window.location.href='#'"><h2>Veja mais!</h2><ion-icon name="play"></ion-icon></button>
+                                <button onclick="openModal('hAzeEs8AnU0')"><h2>Veja mais!</h2><ion-icon name="play"></ion-icon></button>
                             </div>
                         </li>
                     </ul>
@@ -57,7 +57,7 @@
                         </li>
                         <li class="video">
                             <div class="botao_video">
-                                <button onclick="window.location.href='#'"><h2>Em breve</h2><ion-icon name="play"></ion-icon></button>
+                                <button onclick="openModal('hAzeEs8AnU0')"><h2>Veja mais!</h2><ion-icon name="play"></ion-icon></button>
                             </div>
                         </li>
                     </ul>
@@ -71,7 +71,7 @@
                         </li>
                         <li class="video">
                             <div class="botao_video">
-                                <button onclick="window.location.href='#'"><h2>Em breve</h2><ion-icon name="play"></ion-icon></button>
+                                <button onclick="openModal('hAzeEs8AnU0')"><h2>Veja mais!</h2><ion-icon name="play"></ion-icon></button>
                             </div>
                         </li>
                     </ul>
@@ -85,7 +85,7 @@
                         </li>
                         <li class="video">
                             <div class="botao_video">
-                                <button onclick="window.location.href='#'"><h2>Em breve</h2><ion-icon name="play"></ion-icon></button>
+                                <button onclick="openModal('hAzeEs8AnU0')"><h2>Veja mais!</h2><ion-icon name="play"></ion-icon></button>
                             </div>
                         </li>
                     </ul>
@@ -97,6 +97,14 @@
         </div>    
     </main>
 
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

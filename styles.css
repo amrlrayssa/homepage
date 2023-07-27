@@ -26,6 +26,7 @@ body {
 }
 
 .controle {
+    align-items: center;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -166,6 +167,7 @@ li {
 }
 
 .botao_video {
+    flex: 0.3;
     justify-content: center;
     align-items: center;
 }
@@ -187,7 +189,7 @@ li {
 }
 
 .nivel {
-    flex: 1;
+    flex: 2;
     margin-left: 10px;
     text-align: center;
     align-items: center;
@@ -230,6 +232,10 @@ li {
 .botao button:hover {
     color: #0298c6;
     transform: scale(1.2);
+}
+
+.botao_video button:hover {
+    color: #7647aa;
 }
 
 .botao2 {
@@ -276,42 +282,102 @@ li {
     100% { transform: translateY(0); }
 }
 
-@media only screen and (max-width: 1050px) {
-    * {
-        align-items: center;
-    }
+/* Estilize o modal aqui */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow to the modal */
+    border-radius: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #2f588e;
+}
+
+/* Estilo para o vídeo ocupar 100% do modal */
+iframe {
+    width: 99%;
+}
+
+
+@media only screen and (max-width: 920px) {
     .header {
         width: 100%;
         padding-left: 0;
     }
     .controle {
-        width: 70%;
+        width: 50%;
     }
     main {
         display: flex;
         flex-direction: column;
     }
+    .botao_video button h2 {
+        display: none;
+    }
     .robo {
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .robo img {
+        width: 50%;
     }
 }
 
 @media only screen and (max-width: 550px) {
-    * {
-        align-items: center;
+    .controle {
+        width: 70%;
     }
-    .header {
+    .robo img {
         width: 100%;
-        padding-left: 0;
     }
+}
+
+@media only screen and (max-width: 530px) {
     .controle {
         width: 90%;
     }
-    main {
-        display: flex;
-        flex-direction: column;
+}
+
+@media only screen and (max-width: 300px) {
+    .tela h1 {
+        font-size: 25px;
     }
-    .robo {
-        margin-top: 20px;
+    .titulo h1 {
+        font-size: 20px;
+    }
+    .nivel h2 {
+        font-size: 15px;
     }
 }
